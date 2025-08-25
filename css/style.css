@@ -21,19 +21,22 @@ nav {
     top: 0;
     z-index: 1;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     text-transform: uppercase;
-    padding:0 10px ;
+    padding: 0 10px;
 }
-.banner{
+
+.banner {
     background-image: url(/image/fp-home-3-768x512.webp);
     width: 100%;
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.banner h1{
+
+.banner h1 {
     text-align: center;
     background-color: yellowgreen;
     font-size: 60px;
@@ -41,99 +44,79 @@ nav {
     width: 41%;
     position: relative;
     top: 40%;
-    margin:0 auto;
+    margin: 0 auto;
 
 }
-.news{
+
+.news {
     background-color: #f94b89;
     width: 100%;
     height: 50px;
 }
-marquee{
+
+marquee {
     line-height: 50px;
     color: white;
     font-size: 30px;
-    background: linear-gradient(to right,green,blue,red);
+    background: linear-gradient(to right, green, blue, red);
 }
-.about{
+
+.about {
     padding: 150px 200px;
     text-align: center;
-    background: rgb(233, 190, 198);
+    background: rgb(131 17 38);
 }
-.about h2{
+
+.about h2 {
     text-transform: capitalize;
     font-size: 30px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px red;
 }
-.about p{
-line-height: 25px;
-letter-spacing: 1px;
-word-spacing: 1px;
-margin-bottom: 10px;
+
+.about p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
 }
-.about button{
+
+.about button {
     width: 235px;
     height: 42px;
-    background: #f94b89;
+    background: #6a0b2d;
     color: white;
     border: none;
     border-radius: 10px;
 }
 
 /* team css */
-.team{
+.team {
     padding: 150px 200px;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7)),url(/image/fp-about-2-900x506.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url(/image/fp-about-2-900x506.webp);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-   /* background: rgba(0,0,0,0.7);/*
+    /* background: rgba(0,0,0,0.7);/*
    /* background: url(/image/fp-home-3-768x512.webp);*/
 }
-.team h2{
+
+.team h2 {
     text-transform: capitalize;
     font-size: 30px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px red;
-}
-.team p{
-line-height: 25px;
-letter-spacing: 1px;
-word-spacing: 1px;
-margin-bottom: 10px;
-}
-.team button{
-    width: 235px;
-    height: 42px;
-    background: #f94b89;
-    color: white;
-    border: none;
-    border-radius: 10px;
-}
- /* contact css  */
- .contact{
-    padding: 150px 200px;
-    text-align: center;
-    background: linear-gradient(to left, red,orange );
-    color: white
-   
-}
-.contact h2{
-    text-transform: capitalize;
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-shadow: 3px 3px 3px red;
-}
-.contact p{
-line-height: 25px;
-letter-spacing: 1px;
-word-spacing: 1px;
-margin-bottom: 10px;
 }
 
-.contact button{
+.team p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.team button {
     width: 235px;
     height: 42px;
     background: #f94b89;
@@ -141,9 +124,154 @@ margin-bottom: 10px;
     border: none;
     border-radius: 10px;
 }
-footer{
-    background: linear-gradient(to right,grey);
-    width: 100%;
-    height: 350px;
+
+/* contact css  */
+.contact {
+    padding: 150px 200px;
+    text-align: center;
+    background: linear-gradient(to left, red, orange);
+    color: white
 }
+
+.contact h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px red;
+}
+
+.contact p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    width: 235px;
+    height: 42px;
+    background: #f94b89;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-family: arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-links,
+.footer-contact {
+    margin: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-links a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0, 2s;
+
+}
+
+.footer-links a:hover {
+    color: #e91e63;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: #555;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* responsive design */
+
+@media(max-width: 992px){
+    nav{
+        padding: 0,48px;
+
+    }
+    .banner h1{
+              font-size: 40px;
+              width: 70%;
+    }
+    .about,.team,.contact{
+        padding: 80px 50px;
+    }
+}
+@media(max-width: 768px){
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+
+    }
+    .menu{
+        margin-top: 10px;
+
+    }
+    .banner h1{
+        font-size: 28px;
+        width: 90%;
+
+    }
+    .about , .team, .contact{
+        padding: 50px 20px;
+    }
+    .footer-container{
+        flex-direction: column;
+        text-align: centre;
+
+    }
+    .footer-links a{
+        display: inline-block;
+        margin: 5px 10px;
+
+    }
+}
+    @media(max-width: 480px){
+        .banner h1{
+            font-size: 22px;
+            padding: 10px;
+        }
+        .about h2, .team h2, .contact h2{
+            font-size: 22px;
+        }
+        .about button, .team button, .contact button{
+            width: 150px;
+            height: 30px;
+            font-family: 14px;
+        }
+    }
 

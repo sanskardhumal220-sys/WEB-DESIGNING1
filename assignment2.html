@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        textarea {
+            resize: none;
+            height: 70px;
+        }
+
+        button {
+            background: #6a11cb;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .gender-box,
+        .edu-box {
+            display: flex;
+            gap: 15px;
+            margin: 5px 0 15px;
+        }
+
+        .contact {
+            padding: 150px 200px;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7)), url(/image/man-using-laptop-computer-on-a-background-with-science-formulas-P2367R.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <form class="contact">
+        <h2>Registration Form</h2>
+        <input type="text" value="ITM College" readonly>
+
+        <label>Name</label>
+        <input type="text" name="n" placeholder="Enter name" required>
+
+        <label>Email</label>
+        <input type="email" name="e" placeholder="Enter email" required>
+
+        <label>Password</label>
+        <input type="password" name="p" placeholder="Enter password" required>
+
+        <label>Phone</label>
+        <input type="tel" name="number" placeholder="Enter phone number" required>
+
+        <label>D.O.B</label>
+        <input type="date" name="date" required>
+
+        <label>Gender</label>
+        <div class="gender-box">
+            <input type="radio" name="gender" value="female" required> Female
+            <input type="radio" name="gender" value="male" required> Male
+        </div>
+
+        <label>College</label>
+        <select name="college">
+            <option value="itm">ITM</option>
+            <option value="amity">Amity</option>
+            <option value="jiwaji">Jiwaji</option>
+        </select>
+
+        <label>Education</label>
+        <div class="edu-box">
+            <input type="checkbox" name="edu" value="bca"> BCA
+            <input type="checkbox" name="edu" value="12th"> 12th
+            <input type="checkbox" name="edu" value="mba"> MBA
+        </div>
+
+        <label>Address</label>
+        <textarea name="feedback" placeholder="Please enter your valuable feedback"></textarea>
+
+        <label>Upload Image</label>
+        <input type="file" name="image">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
